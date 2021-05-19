@@ -3,11 +3,11 @@ Construct3 (C3) Y8 Plugin
 Test Link: https://storage-direct.y8.com/Gani/html5/c3example/
 
 **Getting Started**
-open your game/new construct3
-Right click in a Script folder and click add script
-Copy the c3Example_y8 main.js and paste into your main.js of the game.
-Then copy the y8API sheet from c3Example_y8 and paste into your game.
-Now Y8 functions should be available in the event tabs
+- open your game/new construct3
+- Right click in a Script folder and click add script
+- Copy the c3Example_y8 main.js and paste into your main.js of the game.
+- Then copy the y8API sheet from c3Example_y8 and paste into your game.
+- Now Y8 functions should be available in the event tabs
 
 **Example**
 We provide the c3Example_y8.c3p file to show the basics of how to use the plugin. Give it a glace, it's easier to understand compared to text only instructions.
