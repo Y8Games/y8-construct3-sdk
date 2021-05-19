@@ -16,7 +16,7 @@ We provide the c3Example_y8.c3p file to show the basics of how to use the plugin
 Purpose of the main.js in properties should be select to "Import for events". Without choosing purpose results as not working y8 SDK.
 
 **Available Functions**
-function Login() - Show a dialog prompting the user to login with an account
+- function Login() - Show a dialog prompting the user to login with an account
 function submitScore() - Submit a high score
 function showLeaderboard() - Show high score menu
 function showAchievment() - Show Achievments menu
