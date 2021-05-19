@@ -17,21 +17,21 @@ Purpose of the main.js in properties should be select to "Import for events". Wi
 
 **Available Functions**
 - function Login() - Show a dialog prompting the user to login with an account
-function submitScore() - Submit a high score
-function showLeaderboard() - Show high score menu
-function showAchievment() - Show Achievments menu
-function unlockAchievment() - Unlock Achievments
-function saveData() - Save a progress 
-function loadData() - Load a progress
-function showAds() - Show Ads
-function openProfile() - open the players profile
-function sendScreenshot() - Submit a screenshot of the game
+- function submitScore() - Submit a high score
+- function showLeaderboard() - Show high score menu
+- function showAchievment() - Show Achievments menu
+- function unlockAchievment() - Unlock Achievments
+- function saveData() - Save a progress 
+- function loadData() - Load a progress
+- function showAds() - Show Ads
+- function openProfile() - open the players profile
+- function sendScreenshot() - Submit a screenshot of the game
 
 **Important Variables**
-gameName - Game Name
-SponsoredSite -  if SponsoredSite = 1 then y8 Logo's are not clickable
-blacklistSite - if blacklistSite = 1 then show blacklist layout 
-userNameY8 - You can call userNameY8 variable to show Player's username.
+- gameName - Game Name
+- SponsoredSite -  if SponsoredSite = 1 then y8 Logo's are not clickable
+- blacklistSite - if blacklistSite = 1 then show blacklist layout 
+- userNameY8 - You can call userNameY8 variable to show Player's username.
 
 
 **Need More Help**
