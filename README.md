@@ -38,6 +38,7 @@ Purpose of the main.js in properties should be select to "Import for events". Wi
 - SponsoredSite -  if SponsoredSite = 1 then y8 Logo's are not clickable
 - blacklistSite - if blacklistSite = 1 then show blacklist layout 
 - userNameY8 - You can call userNameY8 variable to show Player's username.
+- isPausedGameY8 - When the ad call, the isPausedGameY8 change to 1, then you must pause the game. Once the ad closed the isPausedGameY8 change to 0, then you can resume the game.
 
 
 **Need More Help**
