@@ -1,13 +1,13 @@
 # y8-construct3-sdk
 
 Construct3 (C3) Y8 Plugin
-Test Link: https://storage-direct.y8.com/Gani/html5/c3example/
+Test Link: https://storage.y8.com/Gani/html5/c3example_v3/
 
 **Getting Started**
 
 - open your game/new construct3
 - Right click in a Script folder and click add script
-- Copy the c3Example_y8 main.js and paste into your main.js of the game.
+- Copy the c3Example_y8 main.js and paste into your main.js of the game. In main.js line no:33 **appId : "5ea39283d559303d5320eef4"** replace your app Id and line no:66 **var ChannelId = "00000000"** replace your channelId
 - Then copy the y8API sheet from c3Example_y8 and paste into your game.
 - Now Y8 functions should be available in the event tabs
 
@@ -38,6 +38,7 @@ Purpose of the main.js in properties should be select to "Import for events". Wi
 - SponsoredSite -  if SponsoredSite = 1 then y8 Logo's are not clickable
 - blacklistSite - if blacklistSite = 1 then show blacklist layout 
 - userNameY8 - You can call userNameY8 variable to show Player's username.
+- isPausedGameY8 - When the ad call, the isPausedGameY8 change to 1, then you must pause the game. Once the ad closed the isPausedGameY8 change to 0, then you can resume the game.
 
 
 **Need More Help**
