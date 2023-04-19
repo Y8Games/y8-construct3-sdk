@@ -30,6 +30,10 @@ Purpose of the main.js in properties should be select to "Import for events". Wi
 - function saveData() - Save a progress 
 - function loadData() - Load a progress
 - function showAds() - Show Ads
+- function showRewardAds() - Show Rewarded Ads
+- function rewardAdDismissed() - Skip ad, no reward, watch next time
+- function RewardAdGained() - Reward earned, action completed.
+- function No Reward Ads() - No ads available, try again later.
 - function openProfile() - open the players profile
 - function sendScreenshot() - Submit a screenshot of the game
 
