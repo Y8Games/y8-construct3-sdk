@@ -8,7 +8,7 @@ Test Link: https://storage-direct.y8.com/Gani/html5/c3example/
 - open your game/new construct3
 - Right click in a Script folder and click add script
 - Copy the c3Example_y8 main.js and paste into your main.js of the game.
-(in main.js line number 33 please replace your app Id and line number 66 please replace your channel Id)
+(in main.js line number 33 please replace your app Id)
 - Then copy the y8API sheet from c3Example_y8 and paste into your game.
 - Now Y8 functions should be available in the event tabs
 
@@ -44,6 +44,15 @@ Purpose of the main.js in properties should be select to "Import for events". Wi
 - blacklistSite - if blacklistSite = 1 then show blacklist layout 
 - userNameY8 - You can call userNameY8 variable to show Player's username.
 
+**Ads**
+
+If you are an AFP partner, replace the AdSense ID in the main.js
+var AdsenseId = "YOUR_ADSENSE_ID";
+set activateAFP to true (var activateAFP = true;)
+
+If you are not an AFP partner, replace the Channel ID
+var ChannelId = "YOUR_CHANNEL_ID";
+Set activateAFP to false (var activateAFP = false;) Contact us if you want to become an AFP partner or if you need a Channel ID.
 
 **Need More Help**
 
