@@ -20,6 +20,16 @@ We provide the c3Example_y8.c3p file to show the basics of how to use the plugin
 
 Purpose of the main.js in properties should be select to "Import for events". Without choosing purpose results as not working y8 SDK.
 
+**Ads**
+
+If you are an **AFP partner**, replace the AdSense ID in the main.js
+- var AdsenseId = "YOUR_ADSENSE_ID";
+- set activateAFP to true (var activateAFP = true;)
+
+If you are **not an AFP partner**, replace the Channel ID
+- var ChannelId = "YOUR_CHANNEL_ID";
+- Set activateAFP to false (var activateAFP = false;) Contact us if you want to become an AFP partner or if you need a Channel ID.
+
 **Available Functions**
 
 - function Login() - Show a dialog prompting the user to login with an account
@@ -43,16 +53,6 @@ Purpose of the main.js in properties should be select to "Import for events". Wi
 - SponsoredSite -  if SponsoredSite = 1 then y8 Logo's are not clickable
 - blacklistSite - if blacklistSite = 1 then show blacklist layout 
 - userNameY8 - You can call userNameY8 variable to show Player's username.
-
-**Ads**
-
-If you are an **AFP partner**, replace the AdSense ID in the main.js
-- var AdsenseId = "YOUR_ADSENSE_ID";
-- set activateAFP to true (var activateAFP = true;)
-
-If you are **not an AFP partner**, replace the Channel ID
-- var ChannelId = "YOUR_CHANNEL_ID";
-- Set activateAFP to false (var activateAFP = false;) Contact us if you want to become an AFP partner or if you need a Channel ID.
 
 **Need More Help**
 
