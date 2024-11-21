@@ -46,13 +46,13 @@ Purpose of the main.js in properties should be select to "Import for events". Wi
 
 **Ads**
 
-If you are an AFP partner, replace the AdSense ID in the main.js
-var AdsenseId = "YOUR_ADSENSE_ID";
-set activateAFP to true (var activateAFP = true;)
+If you are an **AFP partner**, replace the AdSense ID in the main.js
+- var AdsenseId = "YOUR_ADSENSE_ID";
+- set activateAFP to true (var activateAFP = true;)
 
-If you are not an AFP partner, replace the Channel ID
-var ChannelId = "YOUR_CHANNEL_ID";
-Set activateAFP to false (var activateAFP = false;) Contact us if you want to become an AFP partner or if you need a Channel ID.
+If you are **not an AFP partner**, replace the Channel ID
+- var ChannelId = "YOUR_CHANNEL_ID";
+- Set activateAFP to false (var activateAFP = false;) Contact us if you want to become an AFP partner or if you need a Channel ID.
 
 **Need More Help**
 
