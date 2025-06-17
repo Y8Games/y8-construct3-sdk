@@ -8,7 +8,8 @@ Test Link: https://storage-direct.y8.com/Gani/html5/c3example/
 - open your game/new construct3
 - Right click in a Script folder and click add script
 - Copy the c3Example_y8 main.js and paste into your main.js of the game.
-(in main.js line number 33 please replace your app Id)
+  - Note: in main.js line number 33 please replace your app Id, 
+  - You can create and find your App ID by registering a new application here: https://account.y8.com/applications/
 - Then copy the y8API sheet from c3Example_y8 and paste into your game.
 - Now Y8 functions should be available in the event tabs
 
