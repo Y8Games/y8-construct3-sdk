@@ -6,12 +6,12 @@ Test Link: https://storage-direct.y8.com/Gani/html5/c3example/
 **Getting Started**
 
 - open your game/new construct3
-- Right click in a Script folder and click add script
-- Copy the c3Example_y8 main.js and paste into your main.js of the game.
-  - Note: in main.js line number 33 please replace your app Id, 
-  - You can create and find your App ID by registering a new application here: https://account.y8.com/applications/
-- Then copy the y8API sheet from c3Example_y8 and paste into your game.
-- Now Y8 functions should be available in the event tabs
+- Right click in a Scripts folder and click Add Script
+- Copy the contents of c3Example_y8/main.js and paste them into your project's main.js file.
+  - Note: Update your App ID in the line let _appId = 'YOUR_APP_ID';
+  - You can create or find your App ID by registering a new application here: https://account.y8.com/applications/
+- Copy the y8API event sheet from c3Example_y8 and paste it into your project.
+- The Y8 SDK functions should now be available from your event sheets.
 
 **Example**
 
@@ -23,13 +23,20 @@ Purpose of the main.js in properties should be select to "Import for events". Wi
 
 **Ads**
 
-If you are an **AFP partner**, replace the AdSense ID in the main.js
-- var AdsenseId = "YOUR_ADSENSE_ID";
-- set activateAFP to true (var activateAFP = true;)
+Y8 offers two types of revenue share models:
 
-If you are **not an AFP partner**, replace the Channel ID
-- var ChannelId = "YOUR_CHANNEL_ID";
-- Set activateAFP to false (var activateAFP = false;) Contact us if you want to become an AFP partner or if you need a Channel ID.
+- AFP (AdSense for Platforms) — You get paid directly by Google through your own AdSense account.
+
+- Manual Revenue Share — You send Y8 invoices, and the payment is handled manually.
+
+To apply for AFP, first create a Studio:
+
+Visit https://www.y8.com/studios
+
+Once your studio is approved, you’ll be able to apply for AFP directly from your studio page.
+
+you can get the game Id from our team, once your game gets approved from us.
+In main.js please replace the game id into let _gameId; (Note: The test example uses let _gameId = '249093'; — replace it with your assigned Game ID before going live.)
 
 **Available Functions**
 
