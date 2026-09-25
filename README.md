@@ -38,6 +38,24 @@ Once your studio is approved, you’ll be able to apply for AFP directly from yo
 you can get the game Id from our team, once your game gets approved from us.
 Please replace the game id into global constant string GameID (Note: The test example uses let GameID = '270893'; — replace it with your assigned Game ID before going live.)
 
+**Banners**
+
+Banners are display ads that stay on screen during play. Sizes: 728x90, 300x250, 320x50, 468x60, 320x100.
+
+In-game banner ads need Y8 approval for each game. While the game is in draft or in review, banners show test ads, so you can build the placement first; once it is released, they appear only if Y8 approved them (otherwise `bannersUnavailable`). See [Banners](https://docs.y8.com/sdk/advertising/#banners) for what Y8 approves.
+
+1. Add an object where the banner should go (an invisible Sprite works), sized at least as large as the banner on screen. The banner is shown over the game canvas, centred on it.
+2. Request it from a script action, passing a banner id of your choice, the size and the object type name:
+
+   ```js
+   requestBanner("bottom", 728, 90, "BannerSpot");
+   ```
+
+3. Add event sheet functions `onBannerShown(id)` and `onBannerFailed(id, errorCode)` to hear the result. Error codes include `bannerCooldown` (a banner of that size was requested too recently; the current one stays), `unfilled` (no ad this time), `invalidSize` (the object is smaller on screen than the banner) and `notVisible`.
+4. If the object moves, call `moveBanner("bottom", "BannerSpot")`. Remove banners with `clearBanner("bottom")` or `clearAllBanners()`.
+
+Each size gets at most one new banner every 180 seconds by default (never under 30), whether requested or refreshed automatically. Requires Y8 SDK 2.13.0, which `main.js` loads from the CDN.
+
 **Available Functions**
 
 - function Login() - Show a dialog prompting the user to login with an account
@@ -52,6 +70,10 @@ Please replace the game id into global constant string GameID (Note: The test ex
 - function rewardAdDismissed() - Skip ad, no reward, watch next time
 - function RewardAdGained() - Reward earned, action completed.
 - function No Reward Ads() - No ads available, try again later.
+- requestBanner(id, width, height, objectName) - Show a banner centred on an object (see Banners)
+- moveBanner(id, objectName) - Move a banner to where its object is now
+- clearBanner(id) / clearAllBanners() - Remove banners
+- function onBannerShown(id) / onBannerFailed(id, errorCode) - Banner results
 - function openProfile() - open the players profile
 - function sendScreenshot() - Submit a screenshot of the game
 
