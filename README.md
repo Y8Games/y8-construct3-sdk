@@ -42,7 +42,7 @@ Please replace the game id into global constant string GameID (Note: The test ex
 
 Banners are display ads that stay on screen during play. Sizes: 728x90, 300x250, 320x50, 468x60, 320x100.
 
-In-game banner ads need Y8 approval for each game. Until the game is approved, banners show test ads only and the SDK logs a warning in the browser console, so you can build the placement first. See [Banners](https://docs.y8.com/sdk/advertising/#banners) for what Y8 approves.
+In-game banner ads need Y8 approval for each game. While the game is in draft or in review, banners show test ads, so you can build the placement first; once it is released, they appear only if Y8 approved them (otherwise `bannersUnavailable`). See [Banners](https://docs.y8.com/sdk/advertising/#banners) for what Y8 approves.
 
 1. Add an object where the banner should go (an invisible Sprite works), sized at least as large as the banner on screen. The banner is shown over the game canvas, centred on it.
 2. Request it from a script action, passing a banner id of your choice, the size and the object type name:
